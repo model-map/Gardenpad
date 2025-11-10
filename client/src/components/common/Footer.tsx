@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { Twitter, Github } from "lucide-react";
+import { Twitter, Github, Trees } from "lucide-react";
 
 const footerSections = [
   {
@@ -36,16 +36,11 @@ export const Footer = () => {
           {/* Logo Section */}
           <div className="col-span-full xl:col-span-2">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">
-                  v0
-                </span>
-              </div>
-              <span className="font-semibold text-foreground">Your Brand</span>
+              <Trees />
+              <span className="font-semibold text-foreground">Gardenpad</span>
             </div>
             <p className="mt-4 text-muted-foreground text-sm">
-              Design amazing digital experiences that create more happy in the
-              world.
+              Fresh plants from trusted growers, delivered to your doorstep.
             </p>
           </div>
 
@@ -88,11 +83,11 @@ export const Footer = () => {
         <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
           {/* Copyright */}
           <span className="text-muted-foreground text-sm">
-            &copy; {new Date().getFullYear()} Your Brand. All rights reserved.
+            &copy; {new Date().getFullYear()} Gardenpad. All rights reserved.
           </span>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-5 text-muted-foreground">
+          {/* <div className="flex items-center gap-5 text-muted-foreground">
             <a
               href="#"
               target="_blank"
@@ -109,7 +104,7 @@ export const Footer = () => {
             >
               <Github className="h-5 w-5" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
