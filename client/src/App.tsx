@@ -1,5 +1,9 @@
-const App = () => {
-  return <div className="text-2xl">App</div>;
-};
+import { Button } from "./components/ui/button";
 
-export default App;
+export default function App() {
+  return (
+    <div className="">
+      <Button>Button</Button>
+    </div>
+  );
+}
