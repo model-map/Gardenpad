@@ -1,5 +1,5 @@
 import { TopBanner } from "@/components/common/top-banner";
-import Navbar from "@/components/common/Navbar";
+import Navbar from "@/components/common/navbar/Navbar";
 
 const Header = () => {
   return (

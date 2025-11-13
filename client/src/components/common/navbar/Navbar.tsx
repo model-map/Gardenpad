@@ -1,13 +1,8 @@
-import { Button } from "@/components/ui/button";
-import { Sun, Menu, X, CircleUser } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { ModeToggle } from "../ui/mode-toggle";
+
+import SearchBar from "./SearchBar";
+import UserDropdown from "./User_Dropdown";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -56,29 +51,8 @@ const Navbar = () => {
 
         {/* Right side actions */}
         <div className="flex items-center gap-3">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button size="icon" variant="outline">
-                <CircleUser className="h-5 w-5" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem asChild>
-                <a href="/login" className="cursor-pointer">
-                  Sign In
-                </a>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <a href="/register" className="cursor-pointer">
-                  Sign Up
-                </a>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <ModeToggle />
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-
+          <SearchBar />
+          <UserDropdown />
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMobileMenu}
