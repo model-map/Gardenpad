@@ -5,7 +5,7 @@ const UserLayout = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-1">{/* MAIN CONTENT HERE */}</main>
+      <main className="flex-1 py-50 px-4">MAIN CONTENT HERE</main>
       <Footer />
     </div>
   );

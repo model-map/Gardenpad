@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import SearchBar from "./SearchBar";
 import UserDropdown from "./User_Dropdown";
+import Cart_Sheet from "./Cart_Sheet";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -52,6 +53,7 @@ const Navbar = () => {
         {/* Right side actions */}
         <div className="flex items-center gap-3">
           <SearchBar />
+          <Cart_Sheet />
           <UserDropdown />
           {/* Mobile Menu Button */}
           <button
@@ -69,7 +71,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-background border-t">
+        <div className="md:hidden bg-secondary border-t">
           <div className="flex flex-col gap-4 p-4">
             <a
               href="#"
