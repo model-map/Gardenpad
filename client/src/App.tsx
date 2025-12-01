@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import UserLayout from "./components/layout/UserLayout";
 import { ThemeProvider } from "./lib/theme-provider";
 
-export default function App({ children }: { children: React.ReactNode }) {
+export default function App({ children }: { children?: React.ReactNode }) {
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <BrowserRouter>

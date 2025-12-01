@@ -1,11 +1,12 @@
 import { Footer } from "@/components/common/footer/Footer";
 import Header from "@/components/common/Header";
+import MainSection from "../common/main/MainSection";
 
 const UserLayout = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen grid grid-cols-1">
       <Header />
-      <main className="flex-1 py-50 px-4">MAIN CONTENT HERE</main>
+      <MainSection />
       <Footer />
     </div>
   );
